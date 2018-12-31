@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_title_font_size">18dp</dimen>
+    <dimen name="slider_label_title_font_size">20dp</dimen>
+    <dimen name="resturant_menu_name">24dp</dimen>
+    <dimen name="resturant_name_in_menu">22dp</dimen>
+    <dimen name="resturant_menu_type">16dp</dimen>
+    <dimen name="resturant_list_font_size">20dp</dimen>
+    <dimen name="food_name_font_size">22dp</dimen>
+    <dimen name="count_item_font_size">40dp</dimen>
+    <dimen name="time_remain_font_size">20dp</dimen>
+    <dimen name="start_padding">20dp</dimen>
+    <dimen name="side_bar_width">300dp</dimen>
+
+
+
+
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="restaurant_slide_item_1">slide 1</string>
+    <string name="restaurant_slide_item_2">slide 2</string>
+    <string name="restaurant_slide_item_3">slide 3</string>
+    <string name="restaurant_slide_item_4">slide 4</string>
+    <string name="restaurant_slide_item_5">slide 5</string>
+
+    <string name="restuarant">رستوران ها</string>
+    <string name="category">دسته بندی ها</string>
+    <string name="offer">پیشنهادات ویژه</string>
+    <string name="hottest">داغ ترین ها</string>
+    <string name="video">محتوای ویدئویی</string>
+    <string name="restuarant_list">لیست رستوران ها</string>
+    <string name="best_food">برترین غذاها</string>
+    <string name="best_seller">پرفروش ترین ها</string>
+    <string name="casual_menu">معمولی</string>
+    <string name="scientific_menu">تخصصی</string>
+
+
+
+</resources>

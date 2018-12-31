@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="490dp"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="15dp"
+    android:elevation="15dp">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/food_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/food_name_font_size"
+            android:fontFamily="@font/iran_sans"
+            android:paddingRight="@dimen/start_padding"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorTextTitle" />
+
+        <TextView
+            android:id="@+id/restuarant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iran_sans"
+            android:paddingRight="@dimen/start_padding"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/start_padding">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran_sans"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_alarm_clock"
+                android:drawablePadding="15dp"
+                android:textSize="@dimen/time_remain_font_size"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran_sans"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textAlignment="viewEnd"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/sale_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran_sans"
+                android:layout_weight="1"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="@dimen/time_remain_font_size"
+                android:textAlignment="viewEnd"
+                android:paddingLeft="@dimen/start_padding"/>
+
+
+        </LinearLayout>
+
+        <!--add items-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add"/>
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/lightGreen"
+                android:fontFamily="@font/iran_sans"
+                android:textSize="@dimen/count_item_font_size"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"/>
+            <ImageView
+                android:id="@+id/subtract"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_remove"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

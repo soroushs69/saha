@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightestGrayEver"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/restuarant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_button_round"
+            android:fontFamily="@font/iran_sans_bold"
+            android:onClick="menuFragment"
+            android:text="@string/restuarant"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_title_font_size" />
+
+        <Button
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_button_round"
+            android:fontFamily="@font/iran_sans_bold"
+            android:onClick="menuFragment"
+            android:text="@string/category"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_title_font_size" />
+
+        <Button
+            android:id="@+id/offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_button_round"
+            android:fontFamily="@font/iran_sans_bold"
+            android:onClick="menuFragment"
+            android:text="@string/offer"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_title_font_size" />
+
+        <Button
+            android:id="@+id/hottest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_button_round"
+            android:fontFamily="@font/iran_sans_bold"
+            android:onClick="menuFragment"
+            android:text="@string/hottest"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_title_font_size" />
+
+        <Button
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_button_round"
+            android:fontFamily="@font/iran_sans_bold"
+            android:onClick="menuFragment"
+            android:text="@string/video"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_title_font_size" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_switch"
+        android:name="com.example.yegan.myapplication.menuPage.fragment.HottestFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

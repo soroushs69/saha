@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:id="@+id/yega"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:background="@drawable/food1"
+        android:gravity="center"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/whole_item"
+            android:layout_width="600dp"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            android:layout_above="@+id/yega"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/restuarant_page_border"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:id="@+id/likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heart"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/likes_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iran_sans"
+                    android:textAlignment="center"
+                    android:text="25"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="6">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/big_logo"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/restuarant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ایران ایتالیا"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+
+                    android:fontFamily="@font/iran_sans_bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="فرنگی"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/iran_sans_bold"
+                    android:layout_gravity="center"/>
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/rate3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:maxHeight="15dp"
+                    android:paddingLeft="180dp"
+                    app:mrb_fillBackgroundStars="true"
+                    android:paddingRight="180dp"
+                    android:minHeight="15dp"
+                    android:numStars="5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:id="@+id/comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/comments"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/comments_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iran_sans"
+                    android:textAlignment="center"
+                    android:text="25"/>
+
+            </LinearLayout>
+
+            <!--</FrameLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ListView
+                android:id="@+id/side_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+
+                <TextView
+                    android:id="@+id/kebabText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iran_sans"
+                    android:paddingTop="20dp"
+                    android:textSize="@dimen/activity_title_font_size"
+                    android:text="کبابی"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/kebab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                    android:id="@+id/riceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iran_sans"
+                    android:paddingTop="20dp"
+                    android:textSize="@dimen/activity_title_font_size"
+                    android:background="@color/colorPrimary"
+                    android:text="پلویی"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                    android:id="@+id/saladText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iran_sans"
+                    android:paddingTop="20dp"
+                    android:textSize="@dimen/activity_title_font_size"
+                    android:text="سالاد"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/salad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>
